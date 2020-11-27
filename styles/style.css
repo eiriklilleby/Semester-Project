@@ -1,0 +1,267 @@
+/* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a,
+li {
+  color: #2d353d;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* NAV SECTION */
+
+header {
+  min-height: 12vh;
+  z-index: 100;
+  position: static;
+}
+
+#logo {
+  width: 300px;
+  padding: 10px;
+}
+
+nav,
+#hamburger-menu {
+  display: none;
+}
+
+nav li,
+nav a {
+  display: block;
+}
+
+nav a {
+  text-align: center;
+  padding: 2px 0;
+}
+
+nav a:hover {
+  border: solid #2d353d 2px;
+}
+
+.hamburger-label {
+  float: right;
+  color: #2d353d;
+  padding: 10px;
+  font-size: 1.5rem;
+  display: block;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+/* MAIN PAGE */
+
+.hero {
+  min-height: 88vh;
+  background: url(/images/community\ science\ museum.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.hero-container {
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 4rem 0 0 1rem;
+  width: 350px;
+  height: 220px;
+  padding: 20px;
+  border: solid 4px white;
+}
+
+.container h2 {
+  color: white;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.container p {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.explore-btn {
+  background: none;
+  border: solid 3px white;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  padding: 6px 12px;
+  transition: 0.8s;
+}
+
+.explore-btn:hover {
+  background: white;
+  color: #d95f76;
+}
+
+.info {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 170px;
+  height: 260px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #d95f76;
+}
+
+.info h3 {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.info p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0.8rem 0;
+}
+
+/* MEDIA QUEIRES */
+
+@media (min-width: 768px) {
+  /* NAV */
+
+  #logo {
+    width: 350px;
+    display: flex;
+    margin: auto;
+  }
+  nav {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+  }
+  .hamburger-label {
+    display: none;
+  }
+  nav a:hover {
+    border: none;
+    color: #166b8c;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+  nav a {
+    padding: 2px 40px;
+    display: inline-block;
+  }
+
+  /* HERO SECTION */
+
+  .container {
+    width: 450px;
+  }
+  .info {
+    width: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* GLOBAL STYLES */
+
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  /* HERO SECTION */
+
+  .container {
+    margin-top: 45rem;
+    margin-left: 3rem;
+    height: 240px;
+    width: 500px;
+  }
+  .container p {
+    font-size: 1.6rem;
+  }
+  .explore-btn {
+    padding: 8px 14px;
+    font-size: 1.4rem;
+  }
+
+  .info {
+    width: 200px;
+  }
+  .info h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* GLOBAL STYLES */
+
+  h1 {
+    font-size: 3.8rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    width: 650px;
+    height: 300px;
+  }
+  .explore-btn {
+    padding: 12px 24px;
+  }
+  .info {
+    width: 250px;
+    height: 350px;
+  }
+  .info h3 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+  }
+  .info p {
+    font-size: 1.4rem;
+  }
+}
