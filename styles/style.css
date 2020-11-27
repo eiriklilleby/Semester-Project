@@ -118,7 +118,7 @@ nav a:hover {
 
 .explore-btn {
   background: none;
-  border: solid 3px white;
+  border: solid 2px white;
   cursor: pointer;
   color: white;
   font-size: 1.2rem;
@@ -248,10 +248,18 @@ nav a:hover {
 
   .container {
     width: 650px;
-    height: 300px;
+    height: 350px;
+  }
+
+  .container p {
+    margin: 2rem 0;
+  }
+
+  .container h2 {
+    margin: 2rem 0;
   }
   .explore-btn {
-    padding: 12px 24px;
+    padding: 16px 36px;
   }
   .info {
     width: 250px;
