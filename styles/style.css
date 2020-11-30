@@ -37,7 +37,8 @@ h2 {
 h4 {
   color: #d95f76;
   font-size: 1.8rem;
-  line-height: 20px;
+
+  font-weight: 600;
 }
 
 p {
@@ -110,7 +111,7 @@ nav a:hover {
   background-color: rgba(0, 0, 0, 0.7);
   margin: 4rem 0 0 1rem;
   width: 350px;
-  height: 220px;
+  height: auto;
   padding: 20px;
   border: solid 4px white;
 }
@@ -176,28 +177,29 @@ nav a:hover {
 /* INFO CARDS */
 
 .info-section {
-  min-height: 200vh;
+  min-height: 60vh;
   display: flex;
   justify-content: center;
 }
 
 .card-container {
-  width: 300px;
-  height: 600px;
+  width: 90%;
+  height: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background: red;
 }
 
 .card1 {
   margin-top: 4rem;
-  width: 280px;
-  height: 570px;
+  width: 90%;
+  height: 550px;
   background: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   transition: 0.5s ease;
-  cursor: pointer;
+  margin: 2rem 3rem;
 }
 
 .card1:hover {
@@ -222,6 +224,7 @@ nav a:hover {
 .text-container {
   padding: 14px;
   line-height: 17px;
+  height: auto;
 }
 
 .text-container p {
@@ -266,7 +269,13 @@ nav a:hover {
   .info {
     width: 200px;
   }
+
+  .card-container {
+    flex-wrap: nowrap;
+  }
 }
+
+/* INFO CARDS */
 
 @media (min-width: 992px) {
   /* GLOBAL STYLES */
@@ -280,7 +289,7 @@ nav a:hover {
 
   .container {
     width: 650px;
-    height: 350px;
+    height: auto;
   }
 
   .container p {
@@ -296,7 +305,7 @@ nav a:hover {
   }
   .info {
     width: 250px;
-    height: 350px;
+    height: auto;
   }
   .info h3 {
     margin-top: 1.5rem;
@@ -306,8 +315,17 @@ nav a:hover {
     font-size: 1.4rem;
     margin-top: 1.2rem;
   }
+
+  /* INFO CARDS */
+
+  .card1 {
+    height: 500px;
+  }
 }
 
 @media (min-width: 1200px) {
-  /* GLOBAL STYLES */
+  /* INFO CARDS */
+  .card1 {
+    height: 450px;
+  }
 }
