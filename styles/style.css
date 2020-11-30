@@ -184,7 +184,7 @@ nav a:hover {
 
 .card-container {
   width: 90%;
-  height: auto;
+  height: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -193,8 +193,7 @@ nav a:hover {
 
 .card1 {
   margin-top: 4rem;
-  width: 90%;
-  height: 550px;
+  width: 80%;
   background: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -222,8 +221,8 @@ nav a:hover {
 }
 
 .text-container {
-  padding: 14px;
-  line-height: 17px;
+  padding: 20px;
+  line-height: 20px;
   height: auto;
 }
 
@@ -280,11 +279,8 @@ nav a:hover {
 @media (min-width: 992px) {
   /* GLOBAL STYLES */
 
-  h1 {
-    font-size: 3.8rem;
-  }
-  h2 {
-    font-size: 1.8rem;
+  html {
+    font-size: 70%;
   }
 
   .container {
@@ -317,15 +313,8 @@ nav a:hover {
   }
 
   /* INFO CARDS */
-
-  .card1 {
-    height: 500px;
-  }
 }
 
 @media (min-width: 1200px) {
   /* INFO CARDS */
-  .card1 {
-    height: 450px;
-  }
 }
