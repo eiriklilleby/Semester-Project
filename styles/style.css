@@ -19,8 +19,8 @@ li {
   color: #2d353d;
   text-decoration: none;
   list-style: none;
-  font-size: 1.4rem;
-  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
 }
 
 h1 {
@@ -46,7 +46,7 @@ h5 {
 }
 
 h6 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 p {
@@ -93,6 +93,7 @@ nav a:hover {
   padding: 10px;
   font-size: 1.5rem;
   display: block;
+  margin-top: 1.2rem;
 }
 
 #hamburger-menu:checked ~ nav {
@@ -230,14 +231,14 @@ nav a:hover {
   margin: 2rem 0;
 }
 
-/* EXHIBITONS */
+/* EXHIBITONS & NEWS */
 
 .exhibition {
   min-height: 100vh;
 }
 
 .title {
-  width: 87%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,11 +263,12 @@ nav a:hover {
 
 .card2 {
   width: 90%;
+  height: auto;
   background: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   transition: 0.5s ease;
-  margin: 3rem;
+  margin: 3rem 3rem;
 }
 
 .img-container2 {
@@ -278,7 +280,7 @@ nav a:hover {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: 50% 70%;
+  object-position: 50% 60%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -292,7 +294,7 @@ nav a:hover {
 
 .text-container2 p,
 .text-container3 p {
-  margin: 2rem 0;
+  margin: 3rem 0rem;
 }
 
 .cosmo {
@@ -343,11 +345,12 @@ nav a:hover {
 
 .card3 {
   width: 60%;
+  height: auto;
   background: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   transition: 0.5s ease;
-  margin: 3rem 3rem;
+  margin: 3rem 1rem;
 }
 
 .img-container3 {
@@ -394,6 +397,82 @@ nav a:hover {
   color: #46bf5d;
   background: white;
   border: solid 1px #46bf5d;
+}
+
+/* FOOTER */
+
+footer {
+  min-height: 20vh;
+  background: #d95f76;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+}
+
+.container-footer {
+  width: 90%;
+  height: 30vh;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-footer {
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.contact {
+  font-size: 0.8rem;
+  margin: 2rem 0;
+  color: #2d353d;
+  text-decoration: underline;
+}
+
+.copy {
+  font-size: 0.5rem;
+}
+
+.footer1 {
+  height: 80%;
+}
+
+.footer2 {
+  height: 80%;
+}
+
+.footer2 h5 {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-container {
+  height: 80%;
+  padding-left: 20px;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-twitter {
+  color: white;
+  font-size: 2rem;
+  padding: 2px;
+  transition: 0.5s;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover {
+  color: #166b8c;
+}
+
+.social-container h6 {
+  font-size: 1.2rem;
+  color: white;
 }
 
 /* MEDIA QUEIRES */
@@ -472,7 +551,6 @@ nav a:hover {
   }
   .explore-btn {
     padding: 16px 36px;
-    font-size: 1.4rem;
   }
   .info {
     width: 250px;
@@ -480,10 +558,8 @@ nav a:hover {
   }
   .info h3 {
     margin-top: 1.5rem;
-    font-size: 2rem;
   }
   .info p {
-    font-size: 1.4rem;
     margin-top: 1.2rem;
   }
 
@@ -493,15 +569,17 @@ nav a:hover {
   }
 
   /* EXHIBTION */
-  .card2:hover,
+  .card2:hover {
+    transform: scale(1.1);
+  }
   .card3:hover {
     transform: scale(1.1);
   }
-  .card-btn {
-    padding: 10px 60px;
+  .card3 {
+    width: 31%;
   }
-}
 
-@media (min-width: 1200px) {
-  /* INFO CARDS */
+  .card-btn {
+    padding: 10px 40px;
+  }
 }
