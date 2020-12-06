@@ -32,18 +32,31 @@ h1 {
 h2 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #d95f76;
+  color: #145ede;
 }
 
 h3 {
-  color: #166b8c;
+  color: #bf8563;
   font-size: 1.8rem;
   font-weight: 600;
 }
 
 h4 {
   font-size: 1.8rem;
-  color: #bf8563;
+  color: #166b8c;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.8rem;
+  color: #d95f76;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1.8rem;
+  color: #46bf5d;
+  font-weight: 600;
 }
 
 p {
@@ -75,12 +88,13 @@ nav a {
 
 nav a {
   text-align: center;
-  padding: 2px 0;
+  padding: 0px 0;
 }
 
 nav a:hover {
   border: solid #2d353d 2px;
   color: #166b8c;
+  font-weight: 600;
 }
 
 .hamburger-label {
@@ -96,19 +110,19 @@ nav a:hover {
   display: block;
 }
 
-/* EXHIBTION SECTION */
+/* EXHIBITIONS */
 
 section {
-  max-height: 300vh;
+  min-height: 300vh;
 }
 
 .banner {
   width: 100%;
   height: 300px;
-  background-image: url(/images/explore.jpg);
+  background-image: url(/images/exhibitions.jpg);
   background-size: cover;
   background-position: center;
-  background-position-y: 40%;
+  background-position-y: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,112 +138,74 @@ section {
   justify-content: center;
 }
 
-/* CARDS PICTURES WITH GRID */
-
-.grid-container {
+.wrapper {
   margin: 3rem auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-container {
   width: 90%;
-  display: grid;
-  grid-gap: 1.5rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "box1 box1"
-    "box2 box3"
-    "box2 box4";
-}
-
-.box1 {
+  margin-bottom: 3rem;
   background: white;
-  grid-area: box1;
-  padding: 20px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.box1 p {
-  font-size: 1.2rem;
-  margin: 2rem 0;
+.img-container {
+  height: 600px;
 }
 
-.box2 {
-  grid-area: box2;
-}
-
-.box2 img,
-.box2 img,
-.box3 img,
-.box4 img,
-.box6 img,
-.box8 img,
-.box9 img {
+.card-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 80%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
-.box3 {
-  grid-area: box3;
-}
-
-.box4 {
-  grid-area: box4;
-}
-
-.grid-container2 {
-  margin: 3rem auto;
-  width: 90%;
-  display: grid;
-  grid-gap: 1.5rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "box5 box5"
-    "box6 box6";
-}
-
-.box5 {
-  background: white;
-  grid-area: box5;
+.text-container {
   padding: 20px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
-.box5 p {
+.text-container p {
   margin: 2rem 0;
 }
 
-.box6 {
-  background: blue;
-  grid-area: box6;
-}
-
-.grid-container3 {
-  margin: 3rem auto;
+.card-container2 {
   width: 90%;
   height: auto;
-  display: grid;
-  grid-gap: 1.5rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "box7 box7"
-    "box8 box9";
+  background: white;
+  margin-bottom: 3rem;
 }
 
-.box7 {
-  background: white;
-  grid-area: box7;
+.img-container2 {
+  height: 400px;
+}
+
+.card-container2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.text-container2 {
   padding: 20px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  height: auto;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
-.box7 p {
+.text-container2 p {
   margin: 2rem 0;
-}
-
-.box8 {
-  grid-area: box8;
-}
-
-.box9 {
-  grid-area: box9;
 }
 
 /* FOOTER */
@@ -338,29 +314,22 @@ footer {
     padding: 2px 40px;
     display: inline-block;
   }
+
+  /* EXBITIONS */
+  .wrapper {
+    justify-content: space-evenly;
+  }
+
+  .card-container2 {
+    width: 42.5%;
+  }
+  .text-container2 {
+    height: 420px;
+  }
 }
 
 @media (min-width: 992px) {
   /* GLOBAL STYLES */
-
-  .grid-container {
-    grid-template-columns: 1fr 1fr 1fr 1.5fr;
-    grid-template-rows: 21rem 21rem;
-    grid-template-areas:
-      "box1 box1 box2 box3"
-      "box1 box1 box2 box4";
-  }
-
-  .grid-container2 {
-    grid-template-columns: 1fr 1fr 1fr 1.5fr;
-    grid-template-rows: 26rem;
-    grid-template-areas: "box5 box5 box6 box6";
-  }
-  .grid-container3 {
-    grid-template-columns: 1fr 1fr 1.2fr 1.3fr;
-    grid-template-rows: 21rem;
-    grid-template-areas: "box7 box7 box8 box9";
-  }
 }
 
 @media (min-width: 1200px) {

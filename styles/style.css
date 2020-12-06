@@ -468,6 +468,7 @@ footer {
 .fa-instagram:hover,
 .fa-twitter:hover {
   color: #166b8c;
+  cursor: pointer;
 }
 
 .social-container h6 {
@@ -561,11 +562,6 @@ footer {
   }
   .info p {
     margin-top: 1.2rem;
-  }
-
-  /* INFO CARDS */
-  .card1:hover {
-    transform: scale(1.1);
   }
 
   /* EXHIBTION */
