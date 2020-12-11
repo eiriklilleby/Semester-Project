@@ -98,6 +98,10 @@ nav a:hover {
   display: block;
 }
 
+.target {
+  font-weight: 600;
+}
+
 /* NEWS */
 
 section {
