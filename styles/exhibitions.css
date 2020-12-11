@@ -12,6 +12,7 @@ body {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 a,
@@ -55,7 +56,7 @@ h5 {
 
 h6 {
   font-size: 1.8rem;
-  color: #46bf5d;
+  color: #0ca429;
   font-weight: 600;
 }
 
@@ -92,7 +93,6 @@ nav a {
 }
 
 nav a:hover {
-  border: solid #2d353d 2px;
   color: #166b8c;
   font-weight: 600;
 }
@@ -133,6 +133,7 @@ section {
   width: 200px;
   height: 70px;
   background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,6 +152,7 @@ section {
   width: 90%;
   margin-bottom: 3rem;
   background: white;
+  border-radius: 15px;
 }
 
 .img-container {
@@ -182,6 +184,7 @@ section {
   height: auto;
   background: white;
   margin-bottom: 3rem;
+  border-radius: 15px;
 }
 
 .img-container2 {
@@ -209,10 +212,9 @@ section {
 }
 
 /* FOOTER */
-
 footer {
   min-height: 20vh;
-  background: #d95f76;
+  background: #166b8c;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -237,12 +239,13 @@ footer {
 .contact {
   font-size: 0.8rem;
   margin: 2rem 0;
-  color: #2d353d;
+  color: white;
   text-decoration: underline;
 }
 
 .copy {
   font-size: 0.5rem;
+  color: white;
 }
 
 .footer1 {
@@ -257,6 +260,11 @@ footer {
   color: white;
   font-size: 1rem;
   margin-bottom: 1rem;
+  transition: 0.5s;
+}
+
+.footer2 h5:hover {
+  color: #2d353d;
 }
 
 .social-container {
@@ -276,7 +284,7 @@ footer {
 .fa-facebook:hover,
 .fa-instagram:hover,
 .fa-twitter:hover {
-  color: #166b8c;
+  color: #2d353d;
   cursor: pointer;
 }
 

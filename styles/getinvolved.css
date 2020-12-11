@@ -32,13 +32,19 @@ h1 {
 h2 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #d95f76;
+  color: #166b8c;
 }
 
 h3 {
-  color: #166b8c;
+  color: #d95f76;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 600;
+}
+
+h4 {
+  color: #bf8563;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 p {
@@ -91,7 +97,7 @@ nav a:hover {
   display: block;
 }
 
-/* VISIT */
+/* Get involved */
 
 section {
   min-height: 120vh;
@@ -100,10 +106,10 @@ section {
 .banner {
   width: 100%;
   height: 300px;
-  background-image: url(/images/visit.jpg);
+  background-image: url(/images/get\ involved.jpg);
   background-size: cover;
   background-position: center;
-  background-position-y: 50%;
+  background-position-y: 41%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,9 +121,9 @@ section {
   height: 70px;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
-  border-radius: 15px;
   align-items: center;
   justify-content: center;
+  border-radius: 15px;
 }
 
 .wrapper {
@@ -129,11 +135,24 @@ section {
   justify-content: center;
 }
 
+.text-container {
+  width: 90%;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  height: 325px;
+  padding: 20px;
+  margin-top: 2rem;
+}
+
+.text-container p {
+  margin-top: 2rem;
+}
+
 .img-container {
   width: 90%;
   margin-top: 2rem;
-  height: 400px;
-  background: white;
+  height: 325px;
   border-radius: 15px;
 }
 
@@ -142,126 +161,6 @@ section {
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
-}
-
-.card-container {
-  margin-top: 2rem;
-  width: 90%;
-  height: 400px;
-  background: white;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  display: flex;
-  border-radius: 15px;
-}
-
-.text-container {
-  flex: 1;
-}
-
-.card-container p,
-.card-container2 p {
-  margin-top: 2rem;
-}
-
-.header-contact {
-  margin-top: 5rem;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.card-container2 {
-  margin-top: 2rem;
-  width: 90%;
-  height: 350px;
-  background: white;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 15px;
-}
-
-.card-container3 {
-  margin-top: 2rem;
-  border-radius: 15px;
-  text-align: center;
-  height: 350px;
-  width: 90%;
-  background: white;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-  padding: 20px;
-}
-
-.input-box {
-  border-radius: 15px;
-  padding: 1rem;
-  margin: 1rem auto;
-  border: none;
-  width: 90%;
-  outline: none;
-  background: #f2f2f2;
-}
-
-.contact-btn {
-  margin-top: 2rem;
-  width: 90%;
-  padding: 1rem;
-  color: white;
-  border-radius: 15px;
-  border: none;
-  background: #166b8c;
-  transition: 0.8s;
-  cursor: pointer;
-}
-
-.contact-btn:hover {
-  background: white;
-  color: #166b8c;
-  border: solid 1px #166b8c;
-}
-
-.card-container4 {
-  margin-top: 2rem;
-  width: 90%;
-  height: 350px;
-  background: white;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.circle {
-  border: solid 4px #166b8c;
-  height: 70px;
-  width: 70px;
-  margin-top: 2rem;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-.fa-wheelchair {
-  font-size: 40px;
-  color: #166b8c;
-}
-
-.fa-coffee {
-  font-size: 32px;
-  color: #166b8c;
-}
-
-.fa-shopping-bag {
-  font-size: 38px;
-  color: #166b8c;
-}
-
-.card-container4 p {
-  margin: 2rem 3rem 0 3rem;
 }
 
 /* FOOTER */
@@ -376,33 +275,18 @@ footer {
     padding: 2px 40px;
     display: inline-block;
   }
-
-  /* VISIT */
 }
 
 @media (min-width: 992px) {
-  /* VISIT */
   .wrapper {
     justify-content: space-between;
     width: 90%;
   }
+  .text-container {
+    width: 49%;
+  }
   .img-container {
-    width: 50%;
-  }
-  .card-container {
-    width: 45%;
-  }
-  .card-container2 {
-    width: 25%;
-    height: 450px;
-  }
-  .card-container3 {
-    width: 17.5%;
-    height: 450px;
-  }
-  .card-container4 {
-    width: 17.5%;
-    height: 450px;
+    width: 49%;
   }
 }
 

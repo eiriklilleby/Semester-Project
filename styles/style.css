@@ -83,7 +83,7 @@ nav a {
 }
 
 nav a:hover {
-  border: solid #2d353d 2px;
+  font-weight: 600;
   color: #166b8c;
 }
 
@@ -123,6 +123,8 @@ nav a:hover {
   height: auto;
   padding: 20px;
   border: solid 4px white;
+  border-radius: 15px;
+  z-index: 2;
 }
 
 .container h2 {
@@ -148,24 +150,29 @@ nav a:hover {
   margin-top: 1.5rem;
   padding: 6px 12px;
   transition: 0.8s;
+  border-radius: 15px;
 }
 
 .explore-btn:hover {
   background: white;
-  color: #d95f76;
+  color: #166b8c;
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 10px;
   width: 170px;
-  height: 260px;
+  height: 300px;
   position: absolute;
   bottom: 0;
   right: 0;
-  background: #d95f76;
+  background: #166b8c;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 1;
 }
 
 .info h3 {
@@ -173,13 +180,14 @@ nav a:hover {
   font-weight: 500;
   margin-bottom: 1.5rem;
   font-size: 1.6rem;
+  margin-left: 1.5rem;
 }
 
 .info p {
   color: white;
   font-size: 1.2rem;
   font-weight: 400;
-  margin: 0.5rem auto;
+  margin: 0.5rem 0 0.5rem 1.5rem;
 }
 
 /* INFO CARDS */
@@ -238,7 +246,7 @@ nav a:hover {
 }
 
 .title {
-  width: 90%;
+  width: 86.5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,8 +313,11 @@ nav a:hover {
   padding: 6px 30px;
   border: none;
   color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
   transition: 0.8s;
   cursor: pointer;
+  border-radius: 15px;
 }
 
 .card-btn1 {
@@ -344,7 +355,7 @@ nav a:hover {
 }
 
 .card3 {
-  width: 60%;
+  width: 90%;
   height: auto;
   background: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
@@ -386,24 +397,23 @@ nav a:hover {
 }
 
 .eco {
-  color: #46bf5d;
+  color: #0ca429;
 }
 
 .card-btn5 {
-  background: #46bf5d;
+  background: #0ca429;
 }
 
 .card-btn5:hover {
-  color: #46bf5d;
+  color: #0ca429;
   background: white;
-  border: solid 1px #46bf5d;
+  border: solid 1px#0CA429;
 }
 
 /* FOOTER */
-
 footer {
   min-height: 20vh;
-  background: #d95f76;
+  background: #166b8c;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -428,12 +438,13 @@ footer {
 .contact {
   font-size: 0.8rem;
   margin: 2rem 0;
-  color: #2d353d;
+  color: white;
   text-decoration: underline;
 }
 
 .copy {
   font-size: 0.5rem;
+  color: white;
 }
 
 .footer1 {
@@ -448,6 +459,11 @@ footer {
   color: white;
   font-size: 1rem;
   margin-bottom: 1rem;
+  transition: 0.5s;
+}
+
+.footer2 h5:hover {
+  color: #2d353d;
 }
 
 .social-container {
@@ -467,7 +483,7 @@ footer {
 .fa-facebook:hover,
 .fa-instagram:hover,
 .fa-twitter:hover {
-  color: #166b8c;
+  color: #2d353d;
   cursor: pointer;
 }
 
