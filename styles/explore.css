@@ -204,7 +204,6 @@ section {
 }
 
 .box6 {
-  background: blue;
   grid-area: box6;
   border-radius: 15px;
 }
@@ -285,6 +284,7 @@ footer {
 
 .footer2 {
   height: 80%;
+  margin: 0 2rem;
 }
 
 .footer2 h5 {

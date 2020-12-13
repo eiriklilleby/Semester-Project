@@ -163,6 +163,10 @@ section {
   flex: 1;
 }
 
+.text-container2 {
+  margin-left: 2rem;
+}
+
 .card-container p,
 .card-container2 p {
   margin-top: 2rem;
@@ -312,6 +316,7 @@ footer {
 
 .footer2 {
   height: 80%;
+  margin: 0 2rem;
 }
 
 .footer2 h5 {
