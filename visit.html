@@ -3,18 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <head>
       <meta
         name="description"
         content="Come visit our science musuem. The entrance is free for all. Musuem has accessibility, food & drink and a exclusive shop"
       />
-    </head>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles/visit.css" />
+    <link rel="stylesheet" href="./styles/globas.css">
+    <link rel="stylesheet" href="./styles/visit.css" />
     <title>CSM | Visit</title>
   </head>
   <body>
@@ -80,14 +79,21 @@
         </div>
 
         <div class="card-container3">
-          <form action="submit">
-            <p>Name*</p>
-            <input type="username" class="input-box" placeholder="Type here..." />
-            <p>Phone number*</p>
-            <input type="tel" class="input-box" placeholder="Type here..." />
-            <p>Email*</p>
-            <input type="email" class="input-box" placeholder="Type here..." />
-            <button class="contact-btn" value="Send" type="submit">Contact us</button>
+          <form action="submit" class="formContainer">
+            <p>Name (Required: minimum 5 characters)</p>
+            <input type="text" class="input-box" id="firstName" placeholder="Type here..." />
+             <div class="form-error" id="firstNameError">
+            Please enter your name (Should be more than 5 characters)
+          </div>
+            <p>Phone number(Required: 8 numbers)</p>
+            <input type="tel" class="input-box" id="number" placeholder="Type here..." />
+             <div class="form-error" id="phoneError">
+            Please enter a valid phone number(exact 8 numbers)
+          </div>
+            <p>Email(Required)</p>
+            <input type="email" class="input-box" id="email" placeholder="Type here..." />
+            <div class="form-error" id="emailError">Please enter a valid email adress</div>
+            <button class="contact-btn" value="send" type="submit">Contact us</button>
           </form>
         </div>
 
@@ -145,5 +151,7 @@
         </div>
       </div>
     </footer>
+    
+    <script src="./js/form.js"></script>
   </body>
 </html>

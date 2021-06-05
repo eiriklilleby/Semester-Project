@@ -1,28 +1,3 @@
-/* GLOBAL STYLES */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  background: #f2f2f2;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-a,
-li {
-  color: #2d353d;
-  text-decoration: none;
-  list-style: none;
-  font-size: 1.2rem;
-  padding-bottom: 1rem;
-}
-
 h1 {
   font-size: 2.2rem;
   color: white;
@@ -39,60 +14,6 @@ h3 {
   color: #166b8c;
   font-size: 1.6rem;
   font-weight: 500;
-}
-
-p {
-  color: #2d353d;
-  font-size: 1.2rem;
-}
-
-/* NAV SECTION */
-
-header {
-  min-height: 12vh;
-  z-index: 100;
-}
-
-#logo {
-  width: 300px;
-  padding: 10px;
-}
-
-nav,
-#hamburger-menu {
-  display: none;
-}
-
-nav li,
-nav a {
-  display: block;
-}
-
-nav a {
-  text-align: center;
-  padding: 0px 0;
-}
-
-nav a:hover {
-  color: #166b8c;
-  font-weight: 600;
-}
-
-.hamburger-label {
-  float: right;
-  color: #2d353d;
-  padding: 10px;
-  font-size: 1.5rem;
-  display: block;
-  margin-top: 1.2rem;
-}
-
-#hamburger-menu:checked ~ nav {
-  display: block;
-}
-
-.target {
-  font-weight: 600;
 }
 
 /* VISIT */
@@ -194,7 +115,7 @@ section {
   margin-top: 2rem;
   border-radius: 15px;
   text-align: center;
-  height: 350px;
+  height: 400px;
   width: 90%;
   background: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
@@ -209,6 +130,17 @@ section {
   width: 90%;
   outline: none;
   background: #f2f2f2;
+}
+
+.card-container3 p {
+  font-size: 1.2rem;
+}
+
+.form-error {
+  color: red;
+  font-size: 1rem;
+  margin: 4px 0;
+  display: none;
 }
 
 .contact-btn {
@@ -272,122 +204,9 @@ section {
   margin: 2rem 3rem 0 3rem;
 }
 
-/* FOOTER */
-
-footer {
-  min-height: 20vh;
-  background: #166b8c;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  flex-wrap: wrap;
-}
-
-.container-footer {
-  width: 90%;
-  height: 30vh;
-  margin-top: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.title-footer {
-  font-family: "Orbitron", sans-serif;
-  color: white;
-  font-size: 1.3rem;
-}
-
-.contact {
-  font-size: 0.8rem;
-  margin: 2rem 0;
-  color: white;
-  text-decoration: underline;
-}
-
-.copy {
-  font-size: 0.5rem;
-  color: white;
-}
-
-.footer1 {
-  height: 80%;
-}
-
-.footer2 {
-  height: 80%;
-  margin: 0 2rem;
-}
-
-.footer2 h5 {
-  color: white;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  transition: 0.5s;
-}
-
-.footer2 h5:hover {
-  color: #2d353d;
-}
-
-.social-container {
-  height: 80%;
-  padding-left: 20px;
-}
-
-.fa-facebook,
-.fa-instagram,
-.fa-twitter {
-  color: white;
-  font-size: 2rem;
-  padding: 2px;
-  transition: 0.5s;
-}
-
-.fa-facebook:hover,
-.fa-instagram:hover,
-.fa-twitter:hover {
-  color: #2d353d;
-  cursor: pointer;
-}
-
-.social-container h6 {
-  font-size: 1.2rem;
-  color: white;
-}
-
 /* MEDIA QUEIRES */
 
-@media (min-width: 768px) {
-  /* NAV */
-
-  #logo {
-    width: 400px;
-    display: flex;
-    margin: auto;
-  }
-  nav {
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-  }
-  .hamburger-label {
-    display: none;
-  }
-  nav a:hover {
-    border: none;
-  }
-  ul {
-    display: flex;
-    justify-content: center;
-  }
-  nav a {
-    padding: 2px 40px;
-    display: inline-block;
-  }
-
-  /* VISIT */
-}
+/* VISIT */
 
 @media (min-width: 992px) {
   /* VISIT */
@@ -402,16 +221,16 @@ footer {
     width: 45%;
   }
   .card-container2 {
-    width: 25%;
-    height: 450px;
+    width: 20%;
+    height: 525px;
   }
   .card-container3 {
-    width: 17.5%;
-    height: 450px;
+    width: 22.5%;
+    height: 525px;
   }
   .card-container4 {
     width: 17.5%;
-    height: 450px;
+    height: 525px;
   }
 }
 
